@@ -27,7 +27,7 @@ public class NotePad {
 		desktop.open(new File("C:\\Program Files (x86)\\Windows Application Driver\\WinAppDriver.exe"));
 		Thread.sleep(2000);
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability("appium:app", "C:\\Windows\\System32\\notepad.exe");
+		cap.setCapability("app", "C:\\Windows\\System32\\notepad.exe");
 		cap.setCapability("platformName", "Windows");
 		cap.setCapability("deviceName", "WindowsPC");
 		driver = new WindowsDriver(new URL("http://127.0.0.1:4723/"), cap);
