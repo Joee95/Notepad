@@ -31,7 +31,7 @@ public class NotePad {
 		cap.setCapability("platformName", "Windows");
 		cap.setCapability("deviceName", "WindowsPC");
 		driver = new WindowsDriver(new URL("http://127.0.0.1:4723/"), cap);
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 	}
 
 	@Test
